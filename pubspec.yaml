@@ -1,0 +1,48 @@
+name: personal_assistant
+description: "Personal Assistant - A cross-platform AI assistant (Jarvis-style) supporting OpenAI, Gemini, Anthropic and local Ollama models, with fully on-device chat history."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # State management
+  provider: ^6.1.2
+
+  # Local on-device storage (chat history, settings)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.3
+
+  # Secure storage for API keys (encrypted, on-device only)
+  flutter_secure_storage: ^9.2.2
+
+  # Networking (calls to AI providers / local Ollama server)
+  http: ^1.2.1
+
+  # UI helpers
+  flutter_markdown: ^0.7.1
+  uuid: ^4.4.0
+  intl: ^0.19.0
+  flutter_svg: ^2.0.10+1
+
+  # Speech (optional - for Jarvis-style voice interaction)
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.11
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/

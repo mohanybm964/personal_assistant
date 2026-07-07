@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../core/theme.dart';
 import '../core/constants.dart';
+import '../models/ai_provider_config.dart';
 import '../providers/chat_provider.dart';
 import '../providers/settings_provider.dart';
 import '../widgets/chat_bubble.dart';
